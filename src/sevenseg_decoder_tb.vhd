@@ -77,7 +77,7 @@ test_process : process
         w_Hex <= x"A"; wait for 10 ns;
             assert w_seg_n = "0001000" report "Error on input xA" severity failure;
         w_Hex <= x"B"; wait for 10 ns;
-            assert w_seg_n = "1100000" report "Error on input xB" severity failure;
+            assert w_seg_n = "0000011" report "Error on input xB" severity failure;
         w_Hex <= x"C"; wait for 10 ns;
             assert w_seg_n = "0100111" report "Error on input xC" severity failure;
         w_Hex <= x"D"; wait for 10 ns;
